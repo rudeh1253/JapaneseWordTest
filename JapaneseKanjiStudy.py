@@ -49,6 +49,7 @@ class Note:  # 단어장 생성 및 불러오기
                 break
             line = line.rstrip()
             line = line.replace(" ", "")
+            line = line.replace("~", "")
             line = line.split(",")
             self.wordDict[index] = line
             index += 1
